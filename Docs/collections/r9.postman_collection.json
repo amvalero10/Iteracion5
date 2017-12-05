@@ -1,0 +1,107 @@
+{
+	"variables": [],
+	"info": {
+		"name": "r9",
+		"_postman_id": "b61896b6-fd97-740d-0fb9-6b7b65c05ebb",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/RotondAndes/rest/administradores/1/clientespedido/",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"response code is 200\"] = responseCode.code === 200;",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "http://localhost:8080/RotondAndes/rest/administradores/1/clientespedido/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ordenar\":\"costo\",\n\t\"dini\":11,\n\t\"mini\":11,\n\t\"yini\":2015,\n\t\"dfin\":11,\n\t\"mfin\":11,\n\t\"yfin\":2017,\n\t\"idr\":1\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/RotondAndes/rest/administradores/1/clientes",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"response code is 200\"] = responseCode.code === 200;",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "http://localhost:8080/RotondAndes/rest/administradores/1/clientes",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ordenar\":\"nombre\",\n\t\"dini\":11,\n\t\"mini\":11,\n\t\"yini\":2015,\n\t\"dfin\":11,\n\t\"mfin\":11,\n\t\"yfin\":2017,\n\t\"idr\":1\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/RotondAndes/rest/administradores/1/clientes",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"response code is 200\"] = responseCode.code === 200;",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "http://localhost:8080/RotondAndes/rest/administradores/1/clientes",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ordenar\":\"nada\",\n\t\"dini\":11,\n\t\"mini\":11,\n\t\"yini\":2015,\n\t\"dfin\":11,\n\t\"mfin\":11,\n\t\"yfin\":2017,\n\t\"idr\":1\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

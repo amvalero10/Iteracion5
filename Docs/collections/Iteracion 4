@@ -1,0 +1,42 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Prubas RotondAndes Iteracion 4",
+		"_postman_id": "b193bc0d-1962-807e-c253-46b5b278ed8d",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "RFC12 - CONSULTAR LOS BUENOS CLIENTES",
+			"request": {
+				"url": "http://localhost:8080/RotondAndes/rest/administradores/1/consultaBuenosClientes",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"id\": 9,\n        \"nombre\": \"empanada con aji\",\n        \"cantidad\": 300,\n        \"personalizable\": false,\n        \"precioVenta\": 2000,\n        \"restaurante\": \"La Abuela\",\n        \"categoria\": \"panaderia\",\n        \"descripcion\": \"empanada de carne & aji\",\n        \"tiempoPrep\": 15,\n        \"precioProd\": 1000,\n        \"tipo\": \"panaderia\",\n        \"descripcionIng\": \"emp\",\n        \"numeroVendidos\": 1000,\n        \"traduccion\": \"emp\"\n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "RFC11 - CONSULTAR FUNCIONAMIENTO",
+			"request": {
+				"url": "http://localhost:8080/RotondAndes/rest/administradores/1/consultaFuncionamiento",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

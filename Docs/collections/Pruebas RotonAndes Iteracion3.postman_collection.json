@@ -1,0 +1,715 @@
+{
+	"info": {
+		"name": "Pruebas RotonAndes Iteracion3",
+		"_postman_id": "851f7ed0-ced0-1d2d-7df1-2a2d0006814a",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Arreglo Menu",
+			"description": "",
+			"item": [
+				{
+					"name": "Menu - Restaurante id=1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8080/RotondAndes/rest/restaurantesus/1/menus",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"RotondAndes",
+								"rest",
+								"restaurantesus",
+								"1",
+								"menus"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "RF10 - Servido",
+			"description": "",
+			"item": [
+				{
+					"name": "Postres - Servido",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\" : 4,\n\t\"cantidad\" : 7\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/RotondAndes/rest/restaurantesus/1/servido/postres",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"RotondAndes",
+								"rest",
+								"restaurantesus",
+								"1",
+								"servido",
+								"postres"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Acompaniamiento - Servido",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\" : 1,\n\t\"cantidad\" : 7\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/RotondAndes/rest/restaurantesus/1/servido/acompanimientos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"RotondAndes",
+								"rest",
+								"restaurantesus",
+								"1",
+								"servido",
+								"acompanimientos"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Entradas - Servido",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\" : 2,\n\t\"cantidad\" : 7\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/RotondAndes/rest/restaurantesus/1/servido/entradas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"RotondAndes",
+								"rest",
+								"restaurantesus",
+								"1",
+								"servido",
+								"entradas"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Bebidas - Servido",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\" : 2,\n\t\"cantidad\" : 7\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/RotondAndes/rest/restaurantesus/1/servido/bebidas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"RotondAndes",
+								"rest",
+								"restaurantesus",
+								"1",
+								"servido",
+								"bebidas"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "PlatoFuerte - Servido",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\" : 1,\n\t\"cantidad\" : 7\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/RotondAndes/rest/restaurantesus/1/servido/platoFuertes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"RotondAndes",
+								"rest",
+								"restaurantesus",
+								"1",
+								"servido",
+								"platoFuertes"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "RF16 - Servir Comensales",
+			"description": "",
+			"item": [
+				{
+					"name": "Servir y Actualizar id: 25 y 35",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n\t{\t\"id\" : 25,\n\t\t\"idUsuario\":1,\n\t\t\"mesa\": 1,\n\t\t\"idEntrada\": 1,\n\t\t\"idAcomp\": 1,\n\t\t\"idPlato\": 1,\n\t\t\"idBebida\": 1,\n\t\t\"idPostre\": 1,\n\t\t\"idRestaurante\": 1\n\t\t},\n\t\t\n\t{\n\t\t\"id\": 35,\n\t\t\"idUsuario\":2,\n\t\t\"mesa\": 1,\n\t\t\"idEntrada\": 2,\n\t\t\"idAcomp\": 2,\n\t\t\"idPlato\": 2,\n\t\t\"idBebida\": 2,\n\t\t\"idPostre\": 3,\n\t\t\"idRestaurante\": 1}\n]\n\t"
+						},
+						"url": {
+							"raw": "http://localhost:8080/RotondAndes/rest/clientesPedidos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"RotondAndes",
+								"rest",
+								"clientesPedidos"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar Pedido 25",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":25}\n"
+						},
+						"url": {
+							"raw": "http://localhost:8080/RotondAndes/rest/pedidos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"RotondAndes",
+								"rest",
+								"pedidos"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar Pedido 35",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":35}\n"
+						},
+						"url": {
+							"raw": "http://localhost:8080/RotondAndes/rest/pedidos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"RotondAndes",
+								"rest",
+								"pedidos"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "RF17 - Cancelar producto | | menu || clientes",
+			"description": "",
+			"item": [
+				{
+					"name": "Crear Pedido 77",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 77,\n    \"idUsuario\": 1,\n    \"mesa\": 1,\n    \"costo\": 22000,\n    \"idEntrada\": 1,\n    \"idAcomp\": 1,\n    \"idPlato\": 1,\n    \"idBebida\": 1,\n    \"idPostre\": 1,\n    \"fecha\": 0,\n    \"estado\": \"PENDIENTE\",\n    \"idRestaurante\": 1\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/RotondAndes/rest/pedidos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"RotondAndes",
+								"rest",
+								"pedidos"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Pedido 78",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\n\t{\n    \"id\": 78,\n    \"idUsuario\": 1,\n    \"mesa\": 1,\n    \"costo\": 22000,\n    \"idEntrada\": 1,\n    \"idAcomp\": 1,\n    \"idPlato\": 1,\n    \"idBebida\": 1,\n    \"idPostre\": 1,\n    \"fecha\": 0,\n    \"estado\": \"PENDIENTE\",\n    \"idRestaurante\": 1\n\t}\n\t\n\t"
+						},
+						"url": {
+							"raw": "http://localhost:8080/RotondAndes/rest/pedidos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"RotondAndes",
+								"rest",
+								"pedidos"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Pedido 79",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\n\t{\n    \"id\": 79,\n    \"idUsuario\": 2,\n    \"mesa\": 1,\n    \"costo\": 34000,\n    \"idEntrada\": 2,\n    \"idAcomp\": 2,\n    \"idPlato\": 2,\n    \"idBebida\": 2,\n    \"idPostre\": 3,\n    \"fecha\": 0,\n    \"estado\": \"PENDIENTE\",\n    \"idRestaurante\": 1\n\t}\n\t\n\t"
+						},
+						"url": {
+							"raw": "http://localhost:8080/RotondAndes/rest/pedidos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"RotondAndes",
+								"rest",
+								"pedidos"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Pedido 80",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\n\t{\n    \n    \"id\": 80,\n    \"idUsuario\": 3,\n    \"mesa\": 1,\n    \"costo\": 33000,\n    \"idEntrada\": 3,\n    \"idAcomp\": 3,\n    \"idPlato\": 3,\n    \"idBebida\": 3,\n    \"idPostre\": 4,\n    \"fecha\": 0,\n    \"estado\": \"PENDIENTE\",\n    \"idRestaurante\": 1\n\t}\n\t\n\t"
+						},
+						"url": {
+							"raw": "http://localhost:8080/RotondAndes/rest/pedidos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"RotondAndes",
+								"rest",
+								"pedidos"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Cancelar Entrada - Pedido:77",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n\t\"idProducto\": 1,\n\t\"idCliente\": 1,\n\t\"idPedido\": 77,\n\t\"tipoProducto\":\"entrada\"\n\t\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/RotondAndes/rest/clientesUs/1/cancelar/producto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"RotondAndes",
+								"rest",
+								"clientesUs",
+								"1",
+								"cancelar",
+								"producto"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Cancelar Acompaniamiento - Pedido:77",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n\t\"idProducto\": 1,\n\t\"idCliente\": 1,\n\t\"idPedido\": 77,\n\t\"tipoProducto\":\"acompaniamiento\"\n\t\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/RotondAndes/rest/clientesUs/1/cancelar/producto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"RotondAndes",
+								"rest",
+								"clientesUs",
+								"1",
+								"cancelar",
+								"producto"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Cancelar Bebida - Pedido:77",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n\t\"idProducto\": 1,\n\t\"idCliente\": 1,\n\t\"idPedido\": 77,\n\t\"tipoProducto\":\"bebida\"\n\t\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/RotondAndes/rest/clientesUs/1/cancelar/producto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"RotondAndes",
+								"rest",
+								"clientesUs",
+								"1",
+								"cancelar",
+								"producto"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Cancelar PlatoFuerte - Pedido:77",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n\t\"idProducto\": 1,\n\t\"idCliente\": 1,\n\t\"idPedido\": 77,\n\t\"tipoProducto\":\"platoFuerte\"\n\t\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/RotondAndes/rest/clientesUs/1/cancelar/producto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"RotondAndes",
+								"rest",
+								"clientesUs",
+								"1",
+								"cancelar",
+								"producto"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Cancelar Postre - Pedido:77",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n\t\"idProducto\": 1,\n\t\"idCliente\": 1,\n\t\"idPedido\": 77,\n\t\"tipoProducto\":\"postre\"\n\t\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/RotondAndes/rest/clientesUs/1/cancelar/producto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"RotondAndes",
+								"rest",
+								"clientesUs",
+								"1",
+								"cancelar",
+								"producto"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Cancelar Pedido:77",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \n\t\"idProducto\": 1,\n\t\"idCliente\": 1,\n\t\"idPedido\": 77\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/RotondAndes/rest/clientesUs/1/cancelar/pedido",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"RotondAndes",
+								"rest",
+								"clientesUs",
+								"1",
+								"cancelar",
+								"pedido"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Cancelar Varios: 78,79,80",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n\t{ \n\t\"idPedido\": 78\n\t},\n\t{ \n\t\"idPedido\": 79\n\t},\n\t{ \n\t\"idPedido\": 80\n\t}\n]"
+						},
+						"url": {
+							"raw": "http://localhost:8080/RotondAndes/rest/clientesUs/1/cancelar/varios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"RotondAndes",
+								"rest",
+								"clientesUs",
+								"1",
+								"cancelar",
+								"varios"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "RFC8 - ConsultarReportePedidos",
+			"description": "",
+			"item": [
+				{
+					"name": "ConsultaPedidos Id Restaurante : 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8080/RotondAndes/rest/restaurantesus/1/consultaPedidos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"RotondAndes",
+								"rest",
+								"restaurantesus",
+								"1",
+								"consultaPedidos"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
